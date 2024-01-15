@@ -1,0 +1,157 @@
+body {
+    font-family: "Palatino Linotype", serif;
+    font-size: 1.2em;
+    background-color: rgb(220, 220, 255);
+    margin: 0;
+    padding: 0;
+}
+
+
+main {
+    position: relative;
+    margin: auto auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgb(200, 200, 200);
+    border: 5px outset rgb(150, 0, 0);
+    border-bottom-width: 20px;
+    border-left-width: 20px;
+    box-shadow: 5px 5px 8px 5px rgb(0, 0, 0);
+}
+main h2 {
+    font-family: "Papyrus", fantasy;
+    text-decoration: underline;
+    text-align: center;
+    ;
+    text-decoration-color: rgb(100, 0, 0);
+}
+
+
+strong {
+    font-size: 110%;
+}
+li {
+    font-size: 90%;
+}
+
+
+.title-block {
+    border-radius: 3px;
+    box-shadow: 1px 1px 8px 1px rgb(0, 0, 0);
+    z-index: 10;
+}
+.title-block h1 {
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 2px 2px 15px 3px rgb(100, 0, 0);
+    color: rgb(255, 255, 255);
+    background-image: radial-gradient(circle ,rgba(255, 0, 0, 80%), rgba(0, 0, 0, 80%));
+    font-size: 3em;
+}
+
+
+.profile-block {
+    position: relative;
+    float: right;
+    background-color: rgb(80, 80, 80);
+    border: 5px ridge rgb(150, 0, 0);
+    border-radius: 3px;
+    box-shadow: 2px 2px 8px 3px rgb(0, 0, 0);
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 0;
+    z-index: 9;
+}
+.profile-block img {
+    border: 3px inset rgb(150, 0, 0);
+    border-radius: 15px;
+}
+
+
+.personal-block {
+    position: relative;
+    z-index: 8;
+}
+
+
+.books-block {
+    position: relative;
+    z-index: 7;
+}
+.books-block a {
+    color: rgba(0, 0, 0);
+    text-decoration: none;
+}
+.books-block a:hover {
+    text-decoration: underline;
+}
+
+
+.interests-block {
+    position: relative;
+    z-index: 6;
+}
+.interests-block p {
+    text-indent: 20px;
+}
+
+
+.haiku-block {
+    position: relative;
+    z-index: 5;
+}
+.haiku-block div {
+    text-align: center;
+}
+.haiku-block span {
+    font-size: small;
+    font-style: italic;
+    color: rgb(50, 50, 50);
+}
+.haiku-block h3 {
+    text-decoration: underline;
+    color: rgb(60, 60, 60);
+}
+
+
+.schedule-block {
+    position: relative;
+    z-index: 4;
+}
+.schedule-block table {
+    margin: auto auto;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    width: 100%;
+    background-color: rgb(150, 0, 0);
+ }
+.schedule-block th, .schedule-block td {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 3px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(200, 200, 200);
+}
+.DAGV301R{
+    background-color: rgb(255, 0, 0) !important;
+}
+.DAGV345L {
+    background-color: rgb(0, 255, 0) !important;
+}
+.DAGV3450 {
+    background-color: rgb(0, 0, 255) !important;
+}
+.DAGV3460 {
+    background-color: rgb(0, 255, 255) !important;
+}
+.DAGV3470 {
+    background-color: rgb(255, 0, 255) !important;
+}
+.homework {
+    background-color: rgb(255, 255, 0) !important;
+}
+.commute {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0) !important;
+}
