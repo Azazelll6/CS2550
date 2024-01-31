@@ -1,0 +1,90 @@
+:root {
+    --font-size-h1: 30px;
+    --font-size-h2: 24px;
+    --font-size-h3: 22px;
+    --font-size-h4: 20px;
+    --font-size-h5: 18px;
+    --font-size-h6: 16px;
+    --font-size-main: 14px;
+}
+
+main {
+    font-family: "system-ui", system-ui;
+    font-size: var(--font-size-main);
+    position: relative;
+    margin: 1% 1%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgb(200, 190, 190);
+    border: 5px outset rgb(150, 0, 0);
+    border-bottom-width: 20px;
+    border-left-width: 20px;
+    box-shadow: 5px 5px 8px 5px rgb(0, 0, 0);
+}
+main h1, h2, h3, h4, h5, h6{
+    font-family: "Papyrus", fantasy;
+    text-decoration: underline;
+    text-decoration-color: rgb(100, 0, 0);
+    text-align: center;
+}
+
+body {
+    font-family: "Palatino Linotype", serif;
+    font-size: 1.2em;
+    background-color: rgb(220, 220, 255);
+    margin: 0;
+    padding: 0;
+}
+
+strong {
+    font-size: 110%;
+}
+
+li {
+    font-size: 90%;
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+    margin: calc(var(--font-size-h1) * 0.75) calc(var(--font-size-h1) * 0.25);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+    margin: calc(var(--font-size-h2) * 0.75) calc(var(--font-size-h2) * 0.25);
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+    margin: calc(var(--font-size-h3) * 0.75) calc(var(--font-size-h3) * 0.25);
+}
+
+h4 {
+    font-size: var(--font-size-h4);
+    margin: calc(var(--font-size-h4) * 0.75) calc(var(--font-size-h4) * 0.25);
+}
+
+h5 {
+    font-size: var(--font-size-h5);
+    margin: calc(var(--font-size-h5) * 0.75) calc(var(--font-size-h5) * 0.25);
+}
+
+h6 {
+    font-size: var(--font-size-h6);
+    margin: calc(var(--font-size-h6) * 0.75) calc(var(--font-size-h6) * 0.25);
+}
+
+.title-block {
+    border-radius: 3px;
+    box-shadow: 1px 1px 8px 1px rgb(0, 0, 0);
+    z-index: 100;
+}
+.title-block h1 {
+    margin: 1% auto;
+    text-decoration-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    box-shadow: 2px 2px 15px 3px rgb(100, 0, 0);
+    color: rgb(255, 255, 255);
+    background-image: radial-gradient(circle ,rgba(255, 0, 0, 80%), rgba(0, 0, 0, 80%));
+    font-size: 30pt;
+}
