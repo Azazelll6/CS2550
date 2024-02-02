@@ -1,8 +1,7 @@
-.about-body {
-    width: 800px;
+main {
     height: auto;
     position: relative;
-    margin: 1% auto;
+    margin: auto auto;
     max-width: 800px;
     padding: 20px;
     background-color: rgb(200, 190, 190);
