@@ -1,0 +1,141 @@
+:root {
+    --fontSize: 50px;
+}
+
+.Cormorant-Upright {
+    font-family: "Cormorant Upright", serif;
+    font-weight: 400;
+    font-size: var(--fontSize);
+    font-style: normal;
+}
+.Miltonian-Tattoo {
+    font-family: "Miltonian Tattoo", serif;
+    font-weight: 400;
+    font-size: var(--fontSize);
+    font-style: normal;
+}
+.Mountains-of-Christmas {
+    font-family: "Mountains of Christmas", serif;
+    font-weight: 400;
+    font-size: var(--fontSize);
+    font-style: normal;
+}
+.Kaushan-Script {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-size: var(--fontSize);
+    font-style: normal;
+}
+.Vast-Shadow {
+    font-family: "Vast Shadow", serif;
+    font-weight: 400;
+    font-size: var(--fontSize);
+    font-style: normal;
+}
+.Tangerine {
+    font-family: "Tangerine", cursive;
+    font-weight: 400;
+    font-size: var(--fontSize);
+    font-style: normal;
+}
+.Stalinist-One {
+    font-family: "Stalinist One", sans-serif;
+    font-weight: 400;
+    font-size: var(--fontSize);
+    font-style: normal;
+}
+.Six-Caps {
+    font-family: "", sans-serif;
+    font-weight: 400;
+    font-size: var(--fontSize);
+    font-style: normal;
+}
+.Silkscreen {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-size: var(--fontSize);
+    font-style: normal;
+}
+.Rye {
+    font-family: "Rye", serif;
+    font-weight: 400;
+    font-size: var(--fontSize);
+    font-style: normal;
+}
+.Offside {
+    font-family: "Offside", sans-serif;
+    font-weight: 400;
+    font-size: var(--fontSize);
+    font-style: normal;
+}
+.Odibee-Sans {
+    font-family: "Odibee Sans", sans-serif;
+    font-weight: 400;
+    font-size: var(--fontSize);
+    font-style: normal;
+}
+.Mirza {
+    font-family: "Mirza", serif;
+    font-weight: 400;
+    font-size: var(--fontSize);
+    font-style: normal;
+}
+.Moirai-One {
+    font-family: "Moirai One", system-ui;
+    font-weight: 400;
+    font-size: var(--fontSize);
+    font-style: normal;
+}
+.Maiden-Orange {
+    font-family: "Maiden Orange", serif;
+    font-weight: 400;    font-size: var(--fontSize);
+    font-style: normal;
+}
+.Charm {
+    font-family:"Charm", cursive;
+    font-weight: 400;
+    font-size: var(--fontSize);
+    font-style: normal;
+}
+.Berkshire-Swash {
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-size: var(--fontSize);
+    font-style: normal;
+}
+.Bangers {
+    font-family:"Bangers", system-ui;
+    font-weight: 400;
+    font-size: var(--fontSize);
+    font-style: normal;
+}
+.Allura {
+    font-family: "Allura", cursive;
+    font-weight: 400;    font-size: var(--fontSize);
+    font-style: normal;
+}
+.Allerta-Stencil {
+    font-family: "Allerta Stencil", sans-serif;
+    font-weight: 400;
+    font-size: var(--fontSize);
+    font-style: normal;
+}
+.Aldrich {
+    font-family: "Aldrich", sans-serif;
+    font-weight: 400;
+    font-size: var(--fontSize);
+    font-style: normal;
+}
+
+.Grenze-Gotisch {
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    font-weight: 4;    font-size: var(--fontSize);
+    font-style: normal;
+}
+.Merienda {
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: 4;    font-size: var(--fontSize);
+    font-style: normal;
+}

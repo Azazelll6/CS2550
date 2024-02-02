@@ -1,39 +1,35 @@
 :root {
-    --font-size-h1: 30px;
-    --font-size-h2: 24px;
-    --font-size-h3: 22px;
-    --font-size-h4: 20px;
-    --font-size-h5: 18px;
-    --font-size-h6: 16px;
-    --font-size-main: 14px;
-}
-
-main {
-    font-family: "system-ui", system-ui;
-    font-size: var(--font-size-main);
-    position: relative;
-    margin: 1% 1%;
-    max-width: 800px;
-    padding: 20px;
-    background-color: rgb(200, 190, 190);
-    border: 5px outset rgb(150, 0, 0);
-    border-bottom-width: 20px;
-    border-left-width: 20px;
-    box-shadow: 5px 5px 8px 5px rgb(0, 0, 0);
-}
-main h1, h2, h3, h4, h5, h6{
-    font-family: "Papyrus", fantasy;
-    text-decoration: underline;
-    text-decoration-color: rgb(100, 0, 0);
-    text-align: center;
+    --fontSizeTitle: 50px;
+    --fontSizeH1: 30px;
+    --fontSizeH2: 24px;
+    --fontSizeH3: 22px;
+    --fontSizeH4: 20px;
+    --fontSizeH5: 18px;
+    --fontSizeH6: 16px;
+    --fontSizeMain: 18px;
+    
+    --primaryCoreFont: "Berkshire Swash", serif;
+    --fallbackFont: "Arial", sans-serif;
+    --primaryHeaderFont: "Grenze Gotisch", serif;
+    --secondaryHeaderFont: "Arial", sans-serif;
+    --fallbackHeaderFont: "Papyrus", fantasy;
+    
+    --coreWeight: 400;
+    --headerWeight: 600;
 }
 
 body {
-    font-family: "Palatino Linotype", serif;
-    font-size: 1.2em;
-    background-color: rgb(220, 220, 255);
-    margin: 0;
-    padding: 0;
+    font-family: var(--primaryCoreFont);
+    font-size: var(--fontSizeMain);
+    font-weight: var(--coreWeight);
+}
+
+body h1, h2, h3, h4, h5, h6{
+    font-family: var(--primaryHeaderFont), var(--primaryCoreFont);
+    font-weight: var(--coreWeight);
+    text-decoration: underline;
+    text-decoration-color: rgb(100, 0, 0);
+    text-align: center;
 }
 
 strong {
@@ -45,33 +41,39 @@ li {
 }
 
 h1 {
-    font-size: var(--font-size-h1);
-    margin: calc(var(--font-size-h1) * 0.75) calc(var(--font-size-h1) * 0.25);
+    font-size: var(--fontSizeH1);
+    font-weight: var(--headerWeight);
+    margin: calc(var(--fontSizeH1) * 0.75) calc(var(--fontSizeH1) * 0.25);
 }
 
 h2 {
-    font-size: var(--font-size-h2);
-    margin: calc(var(--font-size-h2) * 0.75) calc(var(--font-size-h2) * 0.25);
+    font-size: var(--fontSizeH2);
+    font-weight: var(--headerWeight);
+    margin: calc(var(--fontSizeH2) * 0.75) calc(var(--fontSizeH2) * 0.25);
 }
 
 h3 {
-    font-size: var(--font-size-h3);
-    margin: calc(var(--font-size-h3) * 0.75) calc(var(--font-size-h3) * 0.25);
+    font-size: var(--fontSizeH3);
+    font-weight: var(--headerWeight);
+    margin: calc(var(--fontSizeH3) * 0.75) calc(var(--fontSizeH3) * 0.25);
 }
 
 h4 {
-    font-size: var(--font-size-h4);
-    margin: calc(var(--font-size-h4) * 0.75) calc(var(--font-size-h4) * 0.25);
+    font-size: var(--fontSizeH4);
+    font-weight: var(--headerWeight);
+    margin: calc(var(--fontSizeH4) * 0.75) calc(var(--fontSizeH4) * 0.25);
 }
 
 h5 {
-    font-size: var(--font-size-h5);
-    margin: calc(var(--font-size-h5) * 0.75) calc(var(--font-size-h5) * 0.25);
+    font-size: var(--fontSizeH5);
+    font-weight: var(--headerWeight);
+    margin: calc(var(--fontSizeH5) * 0.75) calc(var(--fontSizeH5) * 0.25);
 }
 
 h6 {
-    font-size: var(--font-size-h6);
-    margin: calc(var(--font-size-h6) * 0.75) calc(var(--font-size-h6) * 0.25);
+    font-size: var(--fontSizeH6);
+    font-weight: var(--headerWeight);
+    margin: calc(var(--fontSizeH6) * 0.75) calc(var(--fontSizeH6) * 0.25);
 }
 
 .title-block {
@@ -86,5 +88,5 @@ h6 {
     box-shadow: 2px 2px 15px 3px rgb(100, 0, 0);
     color: rgb(255, 255, 255);
     background-image: radial-gradient(circle ,rgba(255, 0, 0, 80%), rgba(0, 0, 0, 80%));
-    font-size: 30pt;
+    font-size: var(--fontSizeTitle);
 }

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Allerta+Stencil&family=Allura&family=Bangers&family=Berkshire+Swash&family=Charm:wght@400;700&family=Cormorant+Upright:wght@300;400;500;600;700&family=Grenze+Gotisch:wght@100..900&family=Kaushan+Script&family=Maiden+Orange&family=Merienda:wght@300..900&family=Miltonian+Tattoo&family=Mirza:wght@400;500;600;700&family=Moirai+One&family=Mountains+of+Christmas:wght@400;700&family=Odibee+Sans&family=Offside&family=Rye&family=Silkscreen:wght@400;700&family=Six+Caps&family=Stalinist+One&family=Tangerine:wght@400;700&family=Vast+Shadow&display=swap');
+/*
+Fonts:
+
+"Cormorant Upright", serif
+"Miltonian Tattoo", serif
+"Mountains of Christmas", serif
+"Kaushan Script", cursive
+"Vast Shadow", serif
+"Tangerine", cursive
+"Stalinist One", sans-serif
+"Six Caps", sans-serif
+"Silkscreen", sans-serif
+"Rye", serif
+"Offside", sans-serif
+"Odibee Sans", sans-serif
+"Mirza", serif
+"Moirai One", system-ui
+"Maiden Orange", serif
+"Charm", cursive
+"Berkshire Swash", serif
+"Bangers", system-ui
+"Allura", cursive
+"Allerta Stencil", sans-serif
+"Aldrich", sans-serif
+{
+  font-family: <font>;
+  font-weight: 300; // light
+  font-weight: 400; // regular
+  font-weight: 500; // medium
+  font-weight: 600; // semi-bold
+  font-weight: 700; // bold
+  font-style: normal;
+}
+
+
+"Grenze Gotisch", serif  : <100-900>
+"Merienda", cursive  : <300-900>
+{
+  font-family: <font>;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+*/
