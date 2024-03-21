@@ -1,0 +1,93 @@
+:root {
+    --fontSizeTitle: 50px;
+    --fontSizeH1: 30px;
+    --fontSizeH2: 24px;
+    --fontSizeH3: 22px;
+    --fontSizeH4: 20px;
+    --fontSizeH5: 18px;
+    --fontSizeH6: 16px;
+    --fontSizeMain: 18px;
+    
+    --primaryCoreFont: "Berkshire Swash", serif;
+    --fallbackFont: "Arial", sans-serif;
+    --primaryHeaderFont: "Grenze Gotisch", serif;
+    --secondaryHeaderFont: "Arial", sans-serif;
+    --fallbackHeaderFont: "Papyrus", fantasy;
+    
+    --coreWeight: 400;
+    --headerWeight: 600;
+}
+
+body {
+    font-family: var(--primaryCoreFont);
+    font-size: var(--fontSizeMain);
+    font-weight: var(--coreWeight);
+    background: rgb(100, 150, 200);
+}
+
+body h1, h2, h3, h4, h5, h6{
+    font-family: var(--primaryHeaderFont), var(--primaryCoreFont);
+    font-weight: var(--coreWeight);
+    text-decoration: underline;
+    text-decoration-color: rgb(100, 0, 0);
+    text-align: center;
+}
+
+strong {
+    font-size: 110%;
+}
+
+li {
+    font-size: 90%;
+}
+
+h1 {
+    font-size: var(--fontSizeH1);
+    font-weight: var(--headerWeight);
+    margin: calc(var(--fontSizeH1) * 0.75) calc(var(--fontSizeH1) * 0.25);
+}
+
+h2 {
+    font-size: var(--fontSizeH2);
+    font-weight: var(--headerWeight);
+    margin: calc(var(--fontSizeH2) * 0.75) calc(var(--fontSizeH2) * 0.25);
+}
+
+h3 {
+    font-size: var(--fontSizeH3);
+    font-weight: var(--headerWeight);
+    margin: calc(var(--fontSizeH3) * 0.75) calc(var(--fontSizeH3) * 0.25);
+}
+
+h4 {
+    font-size: var(--fontSizeH4);
+    font-weight: var(--headerWeight);
+    margin: calc(var(--fontSizeH4) * 0.75) calc(var(--fontSizeH4) * 0.25);
+}
+
+h5 {
+    font-size: var(--fontSizeH5);
+    font-weight: var(--headerWeight);
+    margin: calc(var(--fontSizeH5) * 0.75) calc(var(--fontSizeH5) * 0.25);
+}
+
+h6 {
+    font-size: var(--fontSizeH6);
+    font-weight: var(--headerWeight);
+    margin: calc(var(--fontSizeH6) * 0.75) calc(var(--fontSizeH6) * 0.25);
+}
+
+.title-block {
+    border-radius: 3px;
+    box-shadow: 1px 1px 8px 1px rgb(0, 0, 0);
+    z-index: 100;
+}
+.title-block h1 {
+    margin: 1% auto;
+    text-decoration-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    box-shadow: 2px 2px 15px 3px rgb(100, 0, 0);
+    color: rgb(255, 255, 255);
+    background-image: radial-gradient(circle ,rgba(255, 0, 0, 80%), rgba(0, 0, 0, 80%));
+    font-size: var(--fontSizeTitle);
+}
