@@ -1,124 +1,173 @@
-<!--
-WEB SITE ELEMENTS -  site should include the following elements:
-Overall Layout  (Required)
-Use CSS Grid and Flexbox for your overall layout, columns, rows, alignment etc.  It is a best practice to use CSS Grid for your overall layout, and Flexbox for layout within the site containers.
-
-HTML 5 Semantic Tags for your entire layout:
-
-main, header, section, article, nav, aside, footer, figure, figcaption, detail
-
-I recommend you start with just the main container tags for your application and then add content after they are placed and working as you desire.  Put a background and border on them so you can visualize your layout as you put your CSS Grid and Flexbox containers together.
-Home Page  (Required)
-Home page gives a nice one page display of your topic of interest
-Should include:
-At least four different areas on the page, e.g,
-header
-Menu (aside)
-Main Content
-Footer
-Header (Required)
-Should have an image/logo and a title of some sort.
-You could place your menu in the header if you so choose.
-Menu (Required)
-Create a menu and place it in a <nav> element in either the header, or an aside to left of main content
-This could be a menu which uses  'pills' (buttons), or just plain <a> links.
-Menu can be vertical or horizontal
-Menu has a minimum of three links to different 'sections' of your site, for example:
-Home -  Link which shows your Home Page content
-Contact - Link which shows your contact information
-???   - link to pages which might contain more detailed information and subsections of your site
-Menu actions will hide/show the different sections each whose main content is in tab-panes', one at a time.
-Section Content
-Hiding/Showing Content (Required)
-Implement implement each section of your site into separate <section> elements
-Hide all of the elements except for the 'Home' page using the 'display:none' style
-These are likely contained in <section> tags  One will be set to 'display:none' to start off with.
-You will use javascript to hide and show these sections as you click on the menu items or pills.
-Images
-Your page must contain images (required)
-At least one with a caption
-You should enclose this in a 'Figure' html5 tagLinks to an external site., which also includes a figcaption tag.  (required) (-2 if missing)
-Extra Credit  (+2) Utilize a 'picture' tag with child 'source' tags which show different images based on media query.
-Video (required)
-Embed videos of interest on  your topic
-Overall Considerations
-Responsiveness (Desktop/Tablet)
-Your CSS Grid and  flexbox layout and css should make your profile look nice on both a large desktop as well as a tablet.
-Use media queriesLinks to an external site. to optimize layout at smaller/tablet size (approximately 768 pixels wide)
-Styling
-You should utilize your CSS skills to make your site LOOK NICE!   Use colors, gradients, background images, drop shadows,  images, icons etc. to enhance the look and feel of your site.
-
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Zac Peterson - Aspiring Technical Artist</title>
-    <link rel="stylesheet" href="styles/core.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/uiAnimate.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <header>
-        <!-- Flex container for the name and social links -->
         <div class="branding">
             <h1>Zac Peterson</h1>
             <p class="descriptor">Aspiring Technical Artist</p>
         </div>
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/zachary-peterson-9902a8183/"><img src="/resources/logos/linkedIn." alt="Link to LinkedIn Profile"></a>
-            <a href="https://www.artstation.com/z-ink"><img src="/resources/logos/" alt="Link to Art Station Profile"></a>
-            <a href="https://github.com/Azothyr"><img src="/resources/logos/" alt="Link to GitHub Profile"></a>
-            <a href="https://www.youtube.com/channel/UCDVcyyZTfizjF7-YfAHFbsw"><img src="/resources/logos/" alt="Link to YouTube Channel"></a>
-            <a href="https://play.google.com/store/apps/developer?id=Z.ink+Games&hl=en_US&gl=US"><img src="/resources/logos/" alt="Link to Google Play Profile"></a>
-            <a href="https://www.instagram.com/z.ink.d/"><img src="/resources/logos/" alt="Link to Instagram Profile"></a>
+            <a href="https://www.linkedin.com/in/zachary-peterson-9902a8183/">
+                <img class=social-links-logo src="/resources/logos/LinkedIn/logo-solo.png" alt="Link to LinkedIn Profile">
+            </a>
+            <a href="https://github.com/Azothyr">
+                <img class=social-links-logo src="/resources/logos/github/logo-solo-grey.png" alt="Link to GitHub Profile">
+            </a>
+            <a href="https://www.artstation.com/z-ink">
+                <img class=social-links-logo src="/resources/logos/ArtStation/logo-solo.png" alt="Link to Art Station Profile">
+            </a>
+            <a href="https://www.instagram.com/z.ink.d/">
+                <img class=social-links-logo src="/resources/logos/Instagram/logo-solo.png" alt="Link to Instagram Profile">
+            </a>
+            <a href="https://www.youtube.com/channel/UCDVcyyZTfizjF7-YfAHFbsw">
+                <img class=social-links-logo src="/resources/logos/Youtube/logo-solo.png" alt="Link to YouTube Channel">
+            </a>
+            <a href="https://play.google.com/store/apps/developer?id=Z.ink+Games&hl=en_US&gl=US">
+                <img class=social-links-logo src="/resources/logos/GooglePlay/logo-solo.png" alt="Link to Google Play Profile">
+            </a>
         </div>
     </header>
 
     <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects & Artwork</a>
-        <a href="#contact">Contact</a>
-
+        <a id="small-screen-menu">Menu</a>
+        <a class="primary-nav fade" href="#home">Home</a>
+        <a class="primary-nav fade" id="projects-dropdown">Projects & Artwork</a>
+        <a class="dropdown-nav fade" href="#code">Code</a>
+        <a class="dropdown-nav fade" href="#models">Models</a>
+        <a class="dropdown-nav fade" href="#rigs">Rigs</a>
+        <a class="dropdown-nav fade" href="#games">Games</a>
+        <a class="dropdown-nav fade" href="#artwork">Artwork</a>
+        <a class="primary-nav fade" href="#about">About</a>
+        <a class="primary-nav fade" href="#contact">Contact</a>
     </nav>
 
     <main>
-        <!-- Main content will go here -->
         <section id="home" class="content-section">
-            <!-- Home content -->
+            <div class="slideshow-container">
+                <!--
+                <div class="mySlides fade">
+                   <video controls style="width:100%">
+                       <source src="path/to/video1.mp4" type="video/mp4">
+                       Your browser does not support HTML video.
+                   </video>
+               </div>
+               -->
+                <div class="mySlides fade">
+                    <figure class="video-container">
+                        <iframe src="https://www.youtube.com/embed/1R9678YtEfc" style="width:100%;" height="500" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <figcaption>2024 Demo Reel - Quick little demo real of my work this year.</figcaption>
+                    </figure>
+                </div>
+
+                <div class="mySlides fade">
+                    <figure class="video-container">
+                        <iframe src="https://www.youtube.com/embed/7z7aHvkj96c" style="width:100%;" height="500" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <figcaption>Siege of Timberhold - Establishing Shot Progress</figcaption>
+                    </figure>
+                </div>
+
+                <div class="mySlides fade">
+                    <figure>
+                        <img src="resources/PotionMage_NotSigned.png" alt="Potion Mage Illustration">
+                        <figcaption>Potion Mage - Some of my 2D art or a crazy looking mage holding a potion.</figcaption>
+                    </figure>
+                </div>
+
+                <div class="mySlides fade">
+                    <figure>
+                        <img src="resources/SkeleMageOrig(NoSig).png" alt="Skeleton Mage">
+                        <figcaption>Skeleton Mage - Concept art of a skeletal mage wielding dark magic.</figcaption>
+                    </figure>
+                </div>
+
+                <div class="mySlides fade">
+                    <figure>
+                        <img src="resources/SnailMount1NotSigned.jpg" alt="Snail Mount">
+                        <figcaption>Snail Mount - A whimsical drawing of a saddled snail.</figcaption>
+                    </figure>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
         </section>
-        <section id="contact" class="content-section" style="display: none;">
-            <!-- Contact content -->
+
+        <section id="code" class="content-section">
+
         </section>
-        <section id="more-info" class="content-section" style="display: none;">
-            <!-- More info content -->
+
+        <section id="models" class="content-section">
+
+        </section>
+
+        <section id="rigs" class="content-section">
+
+        </section>
+
+        <section id="games" class="content-section">
+
+        </section>
+
+        <section id="artwork" class="content-section">
+
+        </section>
+
+        <section id="about" class="content-section">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="resources/Zac.jpg" alt="Zac Peterson">
+                </div>
+                <div class="about-text">
+                    <h2>Personal Info:</h2>
+                    <ul>
+                        <li><strong>Major #1:</strong> Animation and Game Development</li>
+                        <li><strong>Major #2:</strong> Software Development</li>
+                        <li><strong>High School:</strong> Timpview High School, 2015</li>
+                        <li><strong>Year:</strong> Junior</li>
+                        <li><strong>Favorite Ice Cream:</strong> Mint Chocolate Chip</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-content">
+                <h2>My Five Favorite Books</h2>
+                <ol>
+                    <li><em>Kings of the Wyld</em>, <a href="https://nicholaseames.com/">Nicholas Eames</a></li>
+                    <li><em>The Black Prism</em>, <a href="https://www.brentweeks.com/">Brent Weeks</a></li>
+                    <li><em>The Choice of Magic</em>, <a href="https://magebornbooks.com/index.html">Michael G. Manning</a></li>
+                    <li><em>The Land: Founding</em>, <a href="https://www.litrpg.com/">Aleron Kong</a></li>
+                    <li><em>The Name of the Wind</em>, <a href="https://patrickrothfuss.com/">Patrick Rothfuss</a></li>
+                </ol>
+            </div>
+            <div class="about-content">
+                <h2>Random Haiku I Wrote <span class="smItalOpaque">you're welcome...</span></h2>
+                <p><span class="smItalOpaque">I love to read books, and since we were listing some of my favorites I decided to combine the two and write a haiku about my love of books.</span></p>
+                <div id="haiku-section">
+                    <h3>Adventure's Call</h3>
+                    <p>Books are my escape<br>
+                        They take me to other worlds<br>
+                        Where I can be free</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section;">
+
         </section>
     </main>
 
-    <aside>
-        <!-- Aside content or additional menu can go here -->
-    </aside>
-
     <footer>
-        <!-- Footer content will go here -->
+        <p>&copy; 2024 Zac Peterson</p>
     </footer>
 
     <script src="scripts/menu.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            const menuLinks = document.querySelectorAll('nav a');
-            menuLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const sectionToShow = this.getAttribute('href').substring(1);
-                    document.querySelectorAll('.content-section').forEach(section => {
-                        section.style.display = 'none';
-                    });
-                    document.getElementById(sectionToShow).style.display = 'block';
-                });
-            });
-        });
-    </script>
+    <script src="scripts/sectionLoader.js"></script>
+    <script src="scripts/slideShow.js"></script>
 
 </body>
 </html>
