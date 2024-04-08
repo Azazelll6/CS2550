@@ -51,43 +51,42 @@
     <main>
         <section id="home" class="content-section">
             <div class="slideshow-container">
-                <!--
-                <div class="mySlides fade">
-                   <video controls style="width:100%">
-                       <source src="path/to/video1.mp4" type="video/mp4">
-                       Your browser does not support HTML video.
-                   </video>
-               </div>
-               -->
-                <div class="mySlides fade">
+                <div class="slide fade">
                     <figure class="video-container">
-                        <iframe src="https://www.youtube.com/embed/1R9678YtEfc" style="width:100%;" height="500" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/Sz239G0eBd4?rel=0&modestbranding=1&si=CghA5G9VrQNXnXeA" style="width:100%;" height="500" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <figcaption>Non-Simulated Dynamics</figcaption>
+                    </figure>
+                </div>
+
+                <div class="slide fade">
+                    <figure class="video-container">
+                        <iframe src="https://www.youtube.com/embed/1R9678YtEfc?rel=0&si=" style="width:100%;" height="500" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <figcaption>2024 Demo Reel - Quick little demo real of my work this year.</figcaption>
                     </figure>
                 </div>
 
-                <div class="mySlides fade">
+                <div class="slide fade">
                     <figure class="video-container">
-                        <iframe src="https://www.youtube.com/embed/7z7aHvkj96c" style="width:100%;" height="500" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/7z7aHvkj96c?rel=0&si=" style="width:100%;" height="500" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <figcaption>Siege of Timberhold - Establishing Shot Progress</figcaption>
                     </figure>
                 </div>
 
-                <div class="mySlides fade">
+                <div class="slide fade">
                     <figure>
                         <img src="resources/PotionMage_NotSigned.png" alt="Potion Mage Illustration">
                         <figcaption>Potion Mage - Some of my 2D art or a crazy looking mage holding a potion.</figcaption>
                     </figure>
                 </div>
 
-                <div class="mySlides fade">
+                <div class="slide fade">
                     <figure>
                         <img src="resources/SkeleMageOrig(NoSig).png" alt="Skeleton Mage">
                         <figcaption>Skeleton Mage - Concept art of a skeletal mage wielding dark magic.</figcaption>
                     </figure>
                 </div>
 
-                <div class="mySlides fade">
+                <div class="slide fade">
                     <figure>
                         <img src="resources/SnailMount1NotSigned.jpg" alt="Snail Mount">
                         <figcaption>Snail Mount - A whimsical drawing of a saddled snail.</figcaption>
@@ -123,36 +122,48 @@
                 <div class="about-image">
                     <img src="resources/Zac.jpg" alt="Zac Peterson">
                 </div>
-                <div class="about-text">
+                <div id="imgModal" class="modal">
+                    <div class="enlarge-img">
+                        <span class="close">&times;</span>
+                        <img id="modalImage" src="" alt="Large portrait">
+                    </div>
+                </div>
+                <div class="personal-info">
                     <h2>Personal Info:</h2>
-                    <ul>
-                        <li><strong>Major #1:</strong> Animation and Game Development</li>
-                        <li><strong>Major #2:</strong> Software Development</li>
-                        <li><strong>High School:</strong> Timpview High School, 2015</li>
-                        <li><strong>Year:</strong> Junior</li>
-                        <li><strong>Favorite Ice Cream:</strong> Mint Chocolate Chip</li>
-                    </ul>
+                    <div class="about-list">
+                        <ul>
+                            <li id="education-info">
+                                <h3>Education:</h3>
+                                <ul>
+                                    <li>Animation and Game Development, Bachelor's of Science: <a href="https://www.uvu.edu/catalog/current/departments/digital-media/animation-and-game-development-bs/">Utah Valley University</a>, <span class="date-range">Fall 2021 - present</span></li>
+                                    <li>Software Development, Bachelor's of Applied Science: <a href="https://www.uvu.edu/catalog/current/departments/computer-science/software-development-bas/">Utah Valley University</a>, <span class="date-range">Fall 2021 - present</span></li>
+                                    <li>High School diploma: <a href="https://timpview.provo.edu/">Timpview High School</a>, <span class="date-range">2011 - 2015</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li id="accolades-info">
+                                <h3>Accolades:</h3>
+                                <ul>
+                                    <li>College of Engineering and Technology: <a href="https://www.uvu.edu/retention/deans_list/">Dean's List</a>, <span class="date-range">Fall 2021 - present</span></li>
+                                    <li>College of Engineering and Technology: <a href="">Digital Media Dean's Merit Award</a>, <span class="date-range">Fall 2023 - present</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="about-content">
+            <div id="favorite-book-list" class="about-content">
                 <h2>My Five Favorite Books</h2>
                 <ol>
-                    <li><em>Kings of the Wyld</em>, <a href="https://nicholaseames.com/">Nicholas Eames</a></li>
-                    <li><em>The Black Prism</em>, <a href="https://www.brentweeks.com/">Brent Weeks</a></li>
-                    <li><em>The Choice of Magic</em>, <a href="https://magebornbooks.com/index.html">Michael G. Manning</a></li>
-                    <li><em>The Land: Founding</em>, <a href="https://www.litrpg.com/">Aleron Kong</a></li>
-                    <li><em>The Name of the Wind</em>, <a href="https://patrickrothfuss.com/">Patrick Rothfuss</a></li>
+                    <li><em>Kings of the Wyld</em>, <a class="list-item-book" href="https://nicholaseames.com/">Nicholas Eames</a></li>
+                    <li><em>The Black Prism</em>, <a class="list-item-book" href="https://www.brentweeks.com/">Brent Weeks</a></li>
+                    <li><em>The Choice of Magic</em>, <a class="list-item-book" href="https://magebornbooks.com/index.html">Michael G. Manning</a></li>
+                    <li><em>The Land: Founding</em>, <a class="list-item-book" href="https://www.litrpg.com/">Aleron Kong</a></li>
+                    <li><em>The Name of the Wind</em>, <a class="list-item-book" href="https://patrickrothfuss.com/">Patrick Rothfuss</a></li>
                 </ol>
             </div>
             <div class="about-content">
-                <h2>Random Haiku I Wrote <span class="smItalOpaque">you're welcome...</span></h2>
-                <p><span class="smItalOpaque">I love to read books, and since we were listing some of my favorites I decided to combine the two and write a haiku about my love of books.</span></p>
-                <div id="haiku-section">
-                    <h3>Adventure's Call</h3>
-                    <p>Books are my escape<br>
-                        They take me to other worlds<br>
-                        Where I can be free</p>
-                </div>
             </div>
         </section>
 
@@ -162,12 +173,15 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Zac Peterson</p>
+        <div class="footer-links">
+            <p>&copy; 2024 Zac Peterson</p>
+        </div>
     </footer>
 
     <script src="scripts/menu.js"></script>
     <script src="scripts/sectionLoader.js"></script>
     <script src="scripts/slideShow.js"></script>
+    <script src="scripts/openClose.js"></script>
 
 </body>
 </html>
