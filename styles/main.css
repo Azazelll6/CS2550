@@ -111,16 +111,12 @@ header::after {
     display: flex;
     justify-content: left;
     align-items: center;
-<<<<<<< HEAD
-    margin: 0;
-=======
     padding-block: 5px;
->>>>>>> 7657515 (quick save point)
 }
 .branding h1 {
     margin: 0;
     font-size: clamp(var(--fontSizeTitle) / 4, 2vw + (var(--fontSizeTitle) / 2), var(--fontSizeTitle));
-    padding-left: 5px;
+    padding-left: 3px;
 }
 .descriptor {
     grid-area: descriptor;
@@ -146,10 +142,6 @@ header::after {
     display: flex;
     justify-content: left;
     align-items: center;
-<<<<<<< HEAD
-    padding-left: 5px;
-=======
->>>>>>> 7657515 (quick save point)
 }
 .social-links a {
     display: flex;
@@ -441,7 +433,6 @@ footer p {
         display: flex;
         align-items: center;
     }
-
     .primary-nav {
         display: flex;
     }
@@ -519,13 +510,10 @@ footer p {
     nav a {
         justify-content: left;
         border-bottom: var(--borderSpacer);
+        font-size: var(--fontSizeH5);
     }
     nav a:hover {
         background: var(--bgcSecondary);
-    }
-    nav a {
-        display: none;
-        font-size: var(--fontSizeH5);
     }
     #small-screen-menu {
         display: flex;
