@@ -2,15 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zac Peterson - Aspiring Technical Artist</title>
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/uiAnimate.css">
     <link rel="stylesheet" href="styles/main.css">
+<!--    <link rel="stylesheet" href="styles/darkTheme.css">-->
 </head>
 <body>
     <header>
         <div class="branding">
             <h1>Zac Peterson</h1>
+        </div>
+        <div class="descriptor">
             <p class="descriptor">Aspiring Technical Artist</p>
         </div>
         <div class="social-links">
@@ -32,6 +36,9 @@
             <a href="https://play.google.com/store/apps/developer?id=Z.ink+Games&hl=en_US&gl=US">
                 <img class=social-links-logo src="/resources/logos/GooglePlay/logo-solo.png" alt="Link to Google Play Profile">
             </a>
+        </div>
+        <div class="theme-button">
+                <button id="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
         </div>
     </header>
 
@@ -73,21 +80,21 @@
                 </div>
 
                 <div class="slide fade">
-                    <figure>
+                    <figure class="image-container">
                         <img src="resources/PotionMage_NotSigned.png" alt="Potion Mage Illustration">
                         <figcaption>Potion Mage - Some of my 2D art or a crazy looking mage holding a potion.</figcaption>
                     </figure>
                 </div>
 
                 <div class="slide fade">
-                    <figure>
+                    <figure class="image-container">
                         <img src="resources/SkeleMageOrig(NoSig).png" alt="Skeleton Mage">
                         <figcaption>Skeleton Mage - Concept art of a skeletal mage wielding dark magic.</figcaption>
                     </figure>
                 </div>
 
                 <div class="slide fade">
-                    <figure>
+                    <figure class="image-container">
                         <img src="resources/SnailMount1NotSigned.jpg" alt="Snail Mount">
                         <figcaption>Snail Mount - A whimsical drawing of a saddled snail.</figcaption>
                     </figure>
