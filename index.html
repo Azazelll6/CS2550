@@ -37,8 +37,9 @@
                 <img class=social-links-logo src="/resources/logos/GooglePlay/logo-solo.png" alt="Link to Google Play Profile">
             </a>
         </div>
-        <div class="theme-button">
+        <div class="nav-buttons">
             <button id="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+            <button class="go-to-section-button" id="visitor-form-button" onclick="showSection('visitor-form-section')">Open Visitor Form</button>
         </div>
     </header>
 
@@ -174,8 +175,91 @@
             </div>
         </section>
 
-        <section id="contact" class="content-section;">
+        <section id="contact" class="content-section">
 
+        </section>
+
+        <section id="visitor-form-section" class="content-section">
+            <div id="visitor-form-success-message" class="submission-success-msg">
+                Thank you for logging your visit!
+            </div>
+            <form id="visitor-form" novalidate method="GET" action="">
+                <h2>Visitor Form</h2>
+                <div class="visitor-info-row">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Enter your first name here">
+                    <span class="error-msg"></span>
+                    <span class="success-msg"></span>
+                </div>
+                <div class="visitor-info-row">
+                    <label for="last-name">Last Name</label>
+                    <input type="text"  id="last-name" name="last-name" placeholder="Enter your last name here">
+                    <span class="error-msg"></span>
+                    <span class="success-msg"></span>
+                </div>
+                <div class="visitor-info-row">
+                    <label for="address">Address</label>
+                    <input type="text"  id="address" name="address" placeholder="Enter your address here">
+                    <span class="error-msg"></span>
+                    <span class="success-msg"></span>
+                </div>
+                <div class="visitor-info-row">
+                    <label for="city">City</label>
+                    <input type="text"  id="city" name="city" placeholder="Enter your city here">
+                    <span class="error-msg"></span>
+                    <span class="success-msg"></span>
+                </div>
+                <div class="visitor-info-row">
+                    <label for="state">State</label>
+                    <input type="text"  id="state" name="state" placeholder="Enter your state here">
+                    <span class="error-msg"></span>
+                    <span class="success-msg"></span>
+                </div>
+                <div class="visitor-info-row">
+                    <label for="zip">Zip</label>
+                    <input type="text"  id="zip" name="zip" placeholder="Enter your zip code here">
+                    <span class="error-msg"></span>
+                    <span class="success-msg"></span>
+                </div>
+                <div class="visitor-info-row">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Enter your email here">
+                    <span class="error-msg"></span>
+                    <span class="success-msg"></span>
+                </div>
+                <div class="visitor-info-row">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" placeholder="Enter your phone here">
+                    <span class="error-msg"></span>
+                    <span class="success-msg"></span>
+                </div>
+                <div class="visitor-how-row">
+                    <h3>How did you find my page</h3>
+                    <ul class="how-option-list">
+                        <li>
+                            <input type="checkbox" id='google' name='find-page' value="google">
+                            <label for="google">Google Search</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id='friend' name='find-page' value="friend">
+                            <label for="friend">Friend</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id='newspaper' name='find-page' value="newspaper">
+                            <label for="newspaper">News Paper</label>
+                        </li>
+                    </ul>
+                    <span class="error-msg" id="how-error"></span>
+                    <span class="success-msg" id="how-success"></span>
+                </div>
+                <div class="visitor-comment-row">
+                    <label for="comment">Comments</label>
+                    <textarea rows="4" id="comment" placeholder="Enter your comments here"></textarea>
+                </div>
+                <div class="visitor-comment-row">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
         </section>
     </main>
 
@@ -190,6 +274,8 @@
     <script src="scripts/slideShow.js"></script>
     <script src="scripts/openClose.js"></script>
     <script src="scripts/toggleTheme.js"></script>
+    <script defer src="scripts/validation.js"></script>
+    <script defer src="scripts/main.js"></script>
 
 </body>
 </html>

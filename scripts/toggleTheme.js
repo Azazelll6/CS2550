@@ -1,6 +1,6 @@
 function toggleTheme() {
     let isDark = document.body.classList.toggle('dark-theme');
-    localStorage.setItem('darkTheme', isDark ? 'true' : 'false'); // Correctly storing the boolean as a string
+    localStorage.setItem('darkTheme', isDark ? 'true' : 'false');
 }
 
 document.addEventListener('DOMContentLoaded', () => {
