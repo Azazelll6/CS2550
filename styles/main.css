@@ -285,7 +285,6 @@ footer p {
 .slideshow-container {
     position: relative;
     margin: auto;
-    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
 .slide {
     display: none;
@@ -312,14 +311,14 @@ footer p {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: var(--bgcAccentSecondary);
+    color: var(--bgcAccentTertiary);
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    border: 5px outset var(--bgcAccentSecondary);
-    background: var(--bgcBrightAccentPrimary);
+    border: 5px outset var(--bgcAccentTertiary);
+    background: rgba(55,55,55,1);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 .next {
